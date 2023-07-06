@@ -140,7 +140,6 @@
               "$live/flags/flag.ts",
               "$live/flags/multivariate.ts",
               "$live/actions/workflows/cancel.ts",
-              "$live/actions/workflows/run.ts",
               "$live/actions/workflows/signal.ts",
               "$live/actions/workflows/start.ts",
               "deco-sites/std/actions/vtex/cart/addItems.ts",
@@ -11725,6 +11724,11 @@
           ],
           "title": "Meta tag description override"
         },
+        "favicon": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "Recommended: 16 x 16 px",
+          "title": "Favicon"
+        },
         "page": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductDetailsPage|null",
           "title": "Page"
@@ -11778,6 +11782,11 @@
             "null"
           ],
           "title": "Metatag description override"
+        },
+        "favicon": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "Recommended: 16 x 16 px",
+          "title": "Favicon"
         }
       },
       "required": [
@@ -12119,48 +12128,6 @@
         "executionId"
       ],
       "title": "deco-cx/live/actions/workflows/cancel.ts@Props"
-    },
-    "ZGVjby1jeC9kdXJhYmxlL2NvbnRleHQudHM=@05a2cc66449ee3cc43ad1783938e3940&Metadata": {
-      "allOf": [
-        {
-          "type": "object",
-          "properties": {
-            "workflow": {
-              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy93b3JrZmxvdy50cw==@Workflow",
-              "title": "Workflow"
-            }
-          },
-          "required": [
-            "workflow"
-          ]
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2NvbnRleHQudHM=@Metadata"
-        }
-      ],
-      "title": "05a2cc66449ee3cc43ad1783938e3940&Metadata"
-    },
-    "ZGVjby1jeC9kdXJhYmxlL2hhbmRsZXIudHM=@RunRequest+Arg+05a2cc66449ee3cc43ad1783938e3940&Metadata": {
-      "type": "object",
-      "properties": {
-        "results": {
-          "title": "Results"
-        },
-        "executionId": {
-          "type": "string",
-          "title": "Execution Id"
-        },
-        "metadata": {
-          "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2NvbnRleHQudHM=@05a2cc66449ee3cc43ad1783938e3940&Metadata",
-          "title": "Metadata"
-        }
-      },
-      "required": [
-        "results",
-        "executionId",
-        "metadata"
-      ],
-      "title": "deco-cx/durable/handler.ts@RunRequest+Arg+05a2cc66449ee3cc43ad1783938e3940&Metadata"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3NpZ25hbC50cw==@Props": {
       "type": "object",
@@ -15322,28 +15289,6 @@
         }
       }
     },
-    "JGxpdmUvYWN0aW9ucy93b3JrZmxvd3MvcnVuLnRz": {
-      "title": "$live/actions/workflows/run.ts",
-      "description": "Proceed the workflow execution based on the current state of the workflow.",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2hhbmRsZXIudHM=@RunRequest+Arg+05a2cc66449ee3cc43ad1783938e3940&Metadata"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "$live/actions/workflows/run.ts"
-          ],
-          "default": "$live/actions/workflows/run.ts"
-        }
-      }
-    },
     "JGxpdmUvYWN0aW9ucy93b3JrZmxvd3Mvc2lnbmFsLnRz": {
       "title": "$live/actions/workflows/signal.ts",
       "description": "Sends a signal to the workflow using the specified payload.",
@@ -16192,9 +16137,6 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvYWN0aW9ucy93b3JrZmxvd3MvY2FuY2VsLnRz"
-        },
-        {
-          "$ref": "#/definitions/JGxpdmUvYWN0aW9ucy93b3JrZmxvd3MvcnVuLnRz"
         },
         {
           "$ref": "#/definitions/JGxpdmUvYWN0aW9ucy93b3JrZmxvd3Mvc2lnbmFsLnRz"
